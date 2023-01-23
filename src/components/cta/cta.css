@@ -1,0 +1,80 @@
+/* Položaj pa oblika backrounda */
+.apli1__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    background: var(--gradient-bar);
+}
+
+/* Oblika prvoga texta */
+.apli1__cta-content p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0E0E0E;
+}
+
+/* Oblika naslova */
+.apli1__cta-content h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+    color: #000000;
+}
+
+/* Položaj pa oblika buttona */
+.apli1__cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.apli1__cta-button button {
+    background: #000000;
+    border-radius: 40px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+/* Položaj pa oblika na napravaj do 650px */
+@media screen and (max-width:650px) {
+    .apli1__cta {
+        flex-direction: column;
+    }
+    .apli1__cta-button {
+        margin: 2rem 0 0;
+    }
+
+}
+
+/* Položaj pa oblika na napravaj do 550px */
+@media screen and (max-width:550px) {
+    .apli1__cta {
+        margin: 4rem 2rem;
+    }
+    .apli1__cta-content {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .apli1__cta-button button {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}

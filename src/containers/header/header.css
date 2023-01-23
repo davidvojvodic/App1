@@ -1,0 +1,178 @@
+/* Položaj headera */
+.aplikacija1__header {
+    display: flex;
+}
+
+.aplikacija1__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+/* Oblika texta v h1 in p v headeri */
+.aplikacija1__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.aplikacija1__header-content p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+
+    margin-top: 2rem;
+}
+
+/* Položaj inputa za email */
+.aplikacija1__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+
+    display: flex;
+}
+
+/* Oblika polja za input in bordera */
+.aplikacija1__header-content__input input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff
+}
+
+/* Oblika buttona in bordera */
+.aplikacija1__header-content__input button {
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%) ;
+    
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem ;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Položaj slike s tekston */
+.aplikacija1__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+ /* Velikost slike pri "sliki s tekston" */
+.aplikacija1__header-content__people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+/* Oblika teksta pri "sliki s tekston" */
+.aplikacija1__header-content__people p {
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Velikost in položaj glavne header slike */
+.aplikacija1__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aplikacija1__header-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Oblika headera pri max 1050px */
+@media screen and (max-width: 1050px) {
+    .aplikacija1__header {
+        flex-direction: column;
+    } 
+
+    .aplikacija1__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+/* Oblika headera pri max 650px */
+@media screen and (max-width: 650px) {
+    .aplikacija1__header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .aplikacija1__header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .aplikacija1__header-content__people {
+        flex-direction: column;
+    }
+
+    .aplikacija1__header-content__people p {
+        margin: 0;
+    }
+
+    .aplikacija1__header-content__input input,
+    .aplikacija1__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* Oblika headera pri max 490px */
+@media screen and (max-width: 490px) {
+    .aplikacija1__header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .aplikacija1__header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .aplikacija1__header-content__input input,
+    .aplikacija1__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,147 @@
+/* flexbox za celi navigation bar, velikost, razmak */
+.aplikacija1__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+
+/* Položaj linkov v navigation bari */
+.aplikacija1__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Logo v navigation bari */
+.aplikacija1__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.aplikacija1__navbar-links_logo img {
+    width: 120px;
+    height: 100px;
+}
+
+.aplikacija1__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Položaj sign in pa sign up buttona */
+.aplikacija1__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Oblika texta v navigation bari */
+.aplikacija1__navbar-links_container p,
+.aplikacija1__navbar-sign p,
+.aplikacija1__navbar-menu_container p {
+    color: white;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+/* Oblika buttona za sign up v desktop pa mobile verziji */
+.aplikacija1__navbar-sign button,
+.aplikacija1__navbar-menu_container button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Mobile menu (skriti na desktop verziji) */
+.aplikacija1__navbar-menu {
+    margin-left: 1rem;
+
+    display: none;
+    position: relative;
+}
+
+.aplikacija1__navbar-menu svg {
+    cursor: pointer;
+}
+
+/* Oblika mobile pa tablet menuja */
+.aplikacija1__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+/* Položaj texta mobile menuja */
+.aplikacija1__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.aplikacija1__navbar-menu_container-links-sign {
+    display: none;
+}
+
+/* Display za naprave do 1050px */
+@media screen and (max-width: 1050px) {
+    .aplikacija1__navbar-links_container {
+        display: none;
+    }
+
+    .aplikacija1__navbar-menu {
+        display: flex;
+    }
+}
+
+/* Display za naprave do 700px */
+@media screen and (max-width: 700px) {
+    .aplikacija1__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+/* Display za naprave do 550px */
+@media screen and (max-width: 550px) {
+    .aplikacija1__navbar {
+        padding: 2rem;
+    }
+
+    .aplikacija1__navbar-sign {
+        display:  none;
+    }
+
+    .aplikacija1__navbar-menu_container{
+        top: 20px;
+    }
+
+    .aplikacija1__navbar-menu_container-links-sign {
+        display: block;
+    }
+
+}
